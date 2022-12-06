@@ -16,8 +16,10 @@ list = new CarList()
     let theCar = new Car(addCarTextField.value);
     list.addCar(theCar);
     addCarTextField.value="";
-     displayCarListOutput.innerHTML="";
+    displayCarListOutput.innerHTML="";
     
+    console.log("****",list.theCarList)
+
     view.render(list.theCarList,displayCarListOutput);
     console.log('Add Car Clicked');
 })
